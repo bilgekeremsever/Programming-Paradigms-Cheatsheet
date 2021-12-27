@@ -15,6 +15,7 @@ Programming Paradigm is the style of the code: "how programmer write and organiz
   - [Object Oriented Programming](#object-oriented-programming)
     - [Prototypal Inheritance / Delegation](#prototypal-inheritance-/-delegation)
     - [OOP Inheritance](#oop-inheritance)
+    - [Solid Principles](#solid-principles)
 
 - [Declarative](#declarative)
   - [Functional Programming](#functional-programming)
@@ -180,6 +181,21 @@ CatProto.init = function(name, age, gender){ // remember faking constructor func
 const smokeyCat = Object.create(CatProto)
 smokeyCat.init('Smokey', 3)
 ```
+
+## Solid Principles
+
+Principles intended to make software designs more understandable, flexible, and maintainable.
+
+- **(S) Single-Responsibility Principle:** \
+  A class should have only one job.
+- **(O) Open-Closed Principle:** \
+  Objects or entities should be open for extension but closed for modification. A class should be extendable without modifying the class itself.
+- **(L) Liskov Substitution Principle:** \
+  Every subclass or derived class should be substitutable for their base or parent class.
+- **(I) Interface Segregation Principle:** \
+  Distribute responsibilities across interfaces. Must prevent classes from relying on modules or functions that they dont need.
+- **(D) Dependency Inversion Principle:** \
+  Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions. _Abstractions must not depend on details. Details must depend on abstractions._
 
 # Functional Programming
 
