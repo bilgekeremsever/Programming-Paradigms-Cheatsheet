@@ -94,7 +94,6 @@ catObject.__proto__            ->  Cat.prototype
 **Prototype Chain:** Ability to lookin up methods and properties in a prototype. And chain continues until the built-in methods/properties in JS. \
 `catObj.hasOwnProperty() //chain is: catObj -> Cat -> Object(JS - Reference Type)`
 
-> Javascript is a prototype-based language
 > Always remember; JavaScript is a prototype-based language and this can lead to beautiful possibilites. Eventhough there are things that you should avoid;\
 > `Array.prototype.unique = function () { return [...new Set(this)] }`\
 > So `arr.unique()` will return unique values.\
